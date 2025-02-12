@@ -10,6 +10,35 @@ body{
     text-align: center;
     width: 100%;
 }
+#menu{
+    display: none;
+    
+}
+.off-screenmenu{
+    z-index: 9999;
+    background-color: rgba(206, 117, 117, 0.7);
+    height: 100vh;
+    width: 90%;
+    max-width: 450px;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: center;
+    text-align: left;
+    font-size: 3rem;
+    transition: .3s ease;
+    color: #e8e9ea;
+}
+.off-screenmenu ul{
+    list-style: none;
+
+}
+.off-screenmenu.active{
+    right: 0;
+}
 header{
     color: #e8e9ea;
     font-size: 24px;
@@ -33,7 +62,7 @@ header{
 }
 #hero{
     height: 60vh;
-    background-image: url("/images/hero.png");
+    background-image: url("https://avatarknell.github.io/valentines-blood-drive/images/hero.png");
     background-position: center;
     background-repeat: no-repeat;
     padding: 40px;
@@ -88,8 +117,50 @@ header{
 #contact-us a{
     color: blue;
 }
+#contact-us li{
+    list-style: none;
+}
 footer{
     background-color: #fab1b7;
     margin-bottom: -16px;
     text-align: center;
+}
+/* Media Query */
+@media only screen and (max-width: 480px) and (orientation: portrait) {
+    header {
+        font-size: 18px;
+        text-align: left;
+    }
+    #more-info {
+        display: none;
+    }
+    #menu{
+        display: flex;
+        font-size: 40px;
+        margin-right: 10px;
+        margin-top: 40px;
+    }
+    
+    #hero {
+        background-size: cover;
+        padding: 0;
+        font-size: 18px;
+    }
+    #hero .details {
+        display: block;
+        color: #E11246;
+    }
+    .details #catchymsg{
+        margin-top: 0;
+        padding: 4px;
+        text-align: right;
+    }
+    .time-venue{
+        font-size: 14px;
+        margin-top: 110px;
+        padding: 5px;
+    }
+    #hero a {
+        left: 7px;
+    }
 }
