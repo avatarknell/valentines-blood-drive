@@ -18,7 +18,7 @@ header{
     display: flex;
     justify-content: space-between;
     background-color: #E11246;
-    background-image: url("./images/header.jpg");
+    background-image: url("https://avatarknell.github.io/valentines-blood-drive/images/header.jpg");
     box-shadow: 10px 10px 5px rgba(97, 51, 51, );
     z-index: 999;
 }
