@@ -9,9 +9,9 @@ menu.addEventListener("click",()=>{
 })
 close.addEventListener("click",()=>{
     offScreenMenu.classList.remove("active");
-    menu.style.display="initial";
+    menu.style.display="flex";
 })
-console.log(offScreenMenu.classList);
+
 
 
 
